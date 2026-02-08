@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    double a, b, c, d;
+    cin >> a >> b >> c >> d;
+
+    double area = a * b - (a - c) * (b - d) / 2.0;
+
+    cout << fixed << setprecision(6) << area << endl;
+
+    return 0;
+}
