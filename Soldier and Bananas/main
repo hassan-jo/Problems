@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long int k, dollars, n, total = 0, borrow = 0;
+	cin >> k >> dollars >> n;
+
+	for (int i = 1; i <= n; i++)
+	{
+		total += i * k;
+	}
+
+	if (total > dollars)
+	{
+		borrow = total - dollars;
+
+		cout << borrow;
+	}
+	else
+	{
+		cout << 0;
+	}
+
+
+	return 0;
+}
